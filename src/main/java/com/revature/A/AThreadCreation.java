@@ -1,6 +1,19 @@
 package com.revature.A;
 
 public class AThreadCreation {
+	
+	/*
+	 * =================================================================
+	 * ====== THERE ARE TWO MAIN WAYS TO CREATE THREADS ================
+	 * =================================================================
+	 * 
+	 * 		(1) Implement Runnable intergace and pass to a new Thread object
+	 * 			(as you see below in this Class)
+	 * 
+	 * 		(2) Extend Thread class, and create an object of that class. 
+	 * 
+	 * ================== Both are equally correct! ====================
+	 */
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -19,7 +32,7 @@ public class AThreadCreation {
 			@Override
 			public void run() {
 				// This is the code that will be run on the OS
-				// as soon as its scheduled by the OS.
+				// as soon as its scheduled by the OS... The OS will call the .start() method
 
 				System.out.println("We are now in thread " + Thread.currentThread().getName()); // *** SET BREAKPOINT HERE (for debugging) ***
 				
