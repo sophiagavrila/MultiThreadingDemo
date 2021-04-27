@@ -12,7 +12,7 @@ public class BThreadException {
 			}
 		});
 		
-		badThread.setName("Misbehaving String");
+		badThread.setName("Misbehaving Thread");
 		
 		badThread.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
 			

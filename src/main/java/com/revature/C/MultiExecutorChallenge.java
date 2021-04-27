@@ -23,8 +23,11 @@ import java.util.ArrayList;
  */
 
 /*
- * Challenge Below
+ * =================================
+ * ========== Challange ============
+ * =================================
  */
+
 public class MultiExecutorChallenge {
 
 	// Add any necessary member variables here
@@ -44,14 +47,20 @@ public class MultiExecutorChallenge {
 	}
 }
 
-class FirstSolution {
+
+/*
+ * ==================================
+ * ========== Solution A ============
+ * ==================================
+ */
+class SolutionA {
 
 	private final List<Runnable> tasks;
 
 	/*
 	 * @param tasks to executed concurrently
 	 */
-	public FirstSolution(List<Runnable> tasks) {
+	public SolutionA(List<Runnable> tasks) {
 		this.tasks = tasks;
 	}
 
@@ -74,9 +83,11 @@ class FirstSolution {
 }
 
 /*
- * Solution below:
+ * ==================================
+ * ========== Solution B ============
+ * ==================================
  */
-class SecondSolution {
+class SolutionB {
 
 	// Add any necessary member variables here
 	List<Thread> tasks = new ArrayList<>();
@@ -84,7 +95,7 @@ class SecondSolution {
 	/*
 	 * @param tasks to executed concurrently
 	 */
-	public SecondSolution(List<Runnable> tasks) {
+	public SolutionB(List<Runnable> tasks) {
 		for (Runnable r : tasks) {
 			this.tasks.add(new Thread(r));
 		}
