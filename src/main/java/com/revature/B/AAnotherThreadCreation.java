@@ -36,7 +36,7 @@ public class AAnotherThreadCreation {
 		}
 		
 		/*
-		 * ^^^^^^ THIS IS THE BEST WAY TO CREATE A THREAD ^^^^^^^
+		 * ^^^^^^ IMO, THIS IS THE BEST WAY TO CREATE A THREAD ^^^^^^^
 		 */
 
 	}
