@@ -35,4 +35,18 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
     > Example: A thread that saves our work every few minutes to a file in a Text Editor App.  If we suddenly quit, the thread can't complete because app has exited.<br>
     > Think of a video game, when it asks you not to turn off your PS4 or quit the game while it's saving.
 
+- Thread Coordination: `com.example.E`
+
+    - :question: *Why do we need Thread Coordination?*
+        - Different Threads run independently.
+        - Order of execution is out of our control.
+        
+        - :thought_balloon: Scenario: Thread A, finishes all work before Thread B.  What if one thread depends on another?
+            
+            - Thread A calculates a value which is INPUT for Thread B.
+            - Thread B relies on Thread A to completely finish its work so it doesn't provide an unfinished calculation.
+            - **Best Solution** Thread B goes to sleep to completely get out of the way of Thread A doing the work it needs to accomplish.
+            - Thread B only wakes up when Thread A is ready to provide the input to it.
+            - **This is accomplished with the** `Thread.join()` **method**.
+
     
