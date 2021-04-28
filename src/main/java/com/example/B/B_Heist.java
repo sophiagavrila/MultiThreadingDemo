@@ -1,10 +1,10 @@
-package com.revature.B;
+package com.example.B;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class BHeist {
+public class B_Heist {
 	
 	/*
 	 * Max integer value for the password.

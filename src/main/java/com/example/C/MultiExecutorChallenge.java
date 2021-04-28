@@ -1,4 +1,4 @@
-package com.revature.C;
+package com.example.C;
 
 import java.util.List;
 import java.util.ArrayList;

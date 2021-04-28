@@ -1,6 +1,6 @@
-package com.revature.A;
+package com.example.A;
 
-public class BThreadException {
+public class B_ThreadException {
 
 	public static void main(String[] args) {
 		Thread badThread = new Thread(new Runnable() {

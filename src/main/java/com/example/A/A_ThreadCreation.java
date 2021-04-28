@@ -1,6 +1,6 @@
-package com.revature.A;
+package com.example.A;
 
-public class AThreadCreation {
+public class A_ThreadCreation {
 	
 	/*
 	 * =================================================================

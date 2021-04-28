@@ -1,6 +1,6 @@
-package com.revature.B;
+package com.example.B;
 
-public class AAnotherThreadCreation {
+public class A_AnotherThreadCreation {
 
 	/*
 	 * This is the second way we create a new thread, which is essentially
