@@ -1,4 +1,4 @@
-package com.example.C;
+package com.example.B;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 /*
  * =================================
- * ========== Challange ============
+ * ========== Challenge ============
  * =================================
  */
 

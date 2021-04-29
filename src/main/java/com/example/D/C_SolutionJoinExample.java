@@ -1,4 +1,4 @@
-package com.example.E;
+package com.example.D;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,6 +53,7 @@ public class C_SolutionJoinExample {
 		}
 		
 		for (int i = 0; i < inputNumbers.size(); i++) {
+			
 			B_FactorialThread factorialThread = threads.get(i);
 			
 			if(factorialThread.isFinished()) { // main thread is checking for results.  Second part of race condition.

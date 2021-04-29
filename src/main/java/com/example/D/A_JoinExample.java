@@ -1,4 +1,4 @@
-package com.example.E;
+package com.example.D;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,8 @@ public class A_JoinExample {
 		// We want to calculate: !0L, !3535L, !35435L, !2324L, !4656L, !23L, !2435L, !5566...
 		
 		/*======================================================
-		 * ====== Step 2: Make Factorial Thread Class B_ =======
+		 * ====== Step 2: Make B_FactorialThread Class =========
+		 * === (Then pick back up on line 29 in this class) ====
 		 *======================================================
 		*/
 		
