@@ -85,6 +85,9 @@ The time it takes to complete a task, measured in time units. :brain: **How can 
 
         > Remember that not all tasks can be broken, including single thread, and simple tasks.
 
-- **Throughput**: The **amount of tasks** completed in a given period of time, measured in tasks per time unit. 
+### Optimizing for Latency - Image Processing
+- Single Threaded Program: `com.example.E.A_SingleThreadedReColorer.java`;
+- Multi Threaded Program: `com.example.E.MultiThreadedReColorer.java`;
 
-### Optimizing for Latency - Image Processing 
+## Throughput
+The **amount of tasks** completed in a given period of time, measured in tasks per time unit. 

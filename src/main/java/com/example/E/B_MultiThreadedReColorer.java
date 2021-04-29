@@ -20,7 +20,7 @@ public class B_MultiThreadedReColorer {
 		
 		BufferedImage resultImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_INT_RGB);
 		
-		/*=======================================
+		/*=======================================s
 		 * == To run the program & record time ==
 		 * ======================================
 		 */
