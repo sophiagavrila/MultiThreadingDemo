@@ -1,11 +1,17 @@
 # ThreadDemo
 This Repository is a collection of demos for teaching MultiThreading in Java 8:
 
+## :one: Thread Creation
+
 - Thread Creation (method #1): `com.example.A`
 - Thread Exception: `com.example.A`
 - Thread Creation (method #2): `com.example.B`
 - MultiThreaded Application (Vault Heist with 3 competing Threads): `com.example.B`
 - MultiExecutor Challenge + Solution: `com.example.B.MultiExecutorChallenge.java`
+
+<br>
+
+## :two: Thread Coordination
 
 - Thread Termination: *Why and When?* `com.example.C`
     - :question: Why stop a thread? 
@@ -52,3 +58,33 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
             > `.join()` tells the calling program to wait for the thread object upon which the method was called to finish its task.
 
 - MultiThreaded Calculation Challenge + Solution: `com.Example.D.MultiThreadedCalculationChallenge.java`
+
+<br>
+
+## :three: Intro to Performance Optimization
+
+- Performance Criteria
+    - **Performance** can be measured differently. 
+        
+        - **Latency Example**: Performance can be measured by latency measured in units of time.  Think about an eCommerce platform. *How fast does an application process a request and deliver a reponse to the user?*.
+
+        - **Throughput Example**: If an app uses Machine Learning to take in data and deliver a prediction, the performance metric would be **throughput** in which the more data the app can inject in 24 hours, the better.
+
+    > These are independent metrics.  Improving one, may have no effect on the other.
+
+### Latency:
+The time it takes to complete a task, measured in time units. :brain: **How can we reduce Latency with MultiThreaded Programming?:
+
+    1. If we have a single task, which can be completed by a single thread, sequentially, (`Time = T`) we can break that single task into *multiple tasks*.
+    2. `Latency = T/N`, tasks over time. `N` = Number of Subtasks.
+    3. Goal is to reduce time it takes to do the task by dividing the task into N amount.  `N = ?`.
+
+    :question: How many subtasks can the original task be broken into? i.e what is N?
+        - Typically N is closest to number of Cores of your computer. Then OS can utilize the CPU's hardware the best it can, and delegate 1 core to each subtask.
+        - `# of threads = # of cores` (rarely optimal), while also assuming nothing else is running on that computer UNLESS, there is a dedicated server.
+
+        > Remember that not all tasks can be broken, including single thread, and simple tasks.
+
+- **Throughput**: The **amount of tasks** completed in a given period of time, measured in tasks per time unit. 
+
+### Optimizing for Latency - Image Processing 
