@@ -5,9 +5,9 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
 - Thread Exception: `com.example.A`
 - Thread Creation (method #2): `com.example.B`
 - MultiThreaded Application (Vault Heist with 3 competing Threads): `com.example.B`
-- MultiExecutor Challenge + Solution: `com.example.C`
+- MultiExecutor Challenge + Solution: `com.example.B.MultiExecutorChallenge.java`
 
-- Thread Termination: *Why and When?* `com.example.D`
+- Thread Termination: *Why and When?* `com.example.C`
     - :question: Why stop a thread? 
         - Threads consume resources.  Even when not doing anything, they still consume memory.  When it runs it consumes CPU time and cahce space.
         
@@ -35,7 +35,7 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
     > Example: A thread that saves our work every few minutes to a file in a Text Editor App.  If we suddenly quit, the thread can't complete because app has exited.<br>
     > Think of a video game, when it asks you not to turn off your PS4 or quit the game while it's saving.
 
-- Thread Coordination: `com.example.E`
+- Thread Coordination: `com.example.D`
 
     - :question: *Why do we need Thread Coordination?*
         - Different Threads run independently.
@@ -49,4 +49,6 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
             - Thread B only wakes up when Thread A is ready to provide the input to it.
             - **This is accomplished with the** `Thread.join()` **method**.
 
-    
+            > `.join()` tells the calling program to wait for the thread object upon which the method was called to finish its task.
+
+- MultiThreaded Calculation Challenge + Solution: `com.Example.D.MultiThreadedCalculationChallenge.java`
