@@ -72,7 +72,7 @@ This Repository is a collection of demos for teaching MultiThreading in Java 8:
 
     > These are independent metrics.  Improving one, may have no effect on the other.
 
-### Latency:
+### :one: Latency: 
 The time it takes to complete a task, measured in time units. :brain: **How can we reduce Latency with MultiThreaded Programming?:
 
     1. If we have a single task, which can be completed by a single thread, sequentially, (`Time = T`) we can break that single task into *multiple tasks*.
@@ -85,7 +85,7 @@ The time it takes to complete a task, measured in time units. :brain: **How can 
 
         > Remember that not all tasks can be broken, including single thread, and simple tasks.
 
-### Optimizing for Latency - Image Processing
+### Optimizing for Latency - Image Processing :camera:
 - Single Threaded Program: `com.example.E.A_SingleThreadedReColorer.java`;
 - Multi Threaded Program: `com.example.E.MultiThreadedReColorer.java`;
 
@@ -94,5 +94,26 @@ The time it takes to complete a task, measured in time units. :brain: **How can 
 
     - We can improve the performance by allowing multiple threads to do the work in less time.  This is done by partitioning the problem into multiple sub-problems.  Thus, Latency = Time divided by Number of Tasks, `L = T/N`.
 
-## Throughput
-The **amount of tasks** completed in a given period of time, measured in tasks per time unit. 
+### :two: Throughput
+The **number of tasks** completed in a given period of time, measured in tasks per time unit.  (Throughput = # of tasks / time). `Throughput = N/T`.
+
+- **By service each task on a different thread, in paralles, we improve throughput by `N`.** `N` = # of threads *or* cores in cpu
+
+### Thread Pooling
+Creating the thread once and re-using them for future tasks, instead of recreating and restarting thehm. Thread Pools us achieve optimal throughput. 
+
+- Once threads are created, they sit in a pool.
+- Tasks are lined up in a queue and distributed to each thread within the pool.
+    - If all threads within pool are busy, the tasks wait in the queue for one to free up.
+
+> JDK comes with a few implementations of thread pools, including `Fixed Thread Pool Executor` which creates a thread pool with a fixed # of threads in the pool.
+
+```java
+int numberOfThreads = 4;
+Executor executor = Executor.newFixedThreadPool(numberOfThreads);
+
+Runnable task = ...;
+executor.execute(task);
+```
+
+### Optimizing for Throughput: HTTP Server + Measure Throughput with Apache Jmeter :chart_with_upwards_trend:
