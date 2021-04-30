@@ -1,4 +1,4 @@
-# ThreadDemo
+# Multi-Threading Demo
 This Repository is a collection of demos for teaching MultiThreading in Java 8:
 
 ## :one: Thread Creation
