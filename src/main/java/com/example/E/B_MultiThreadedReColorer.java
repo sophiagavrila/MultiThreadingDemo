@@ -25,7 +25,15 @@ public class B_MultiThreadedReColorer {
 		 * ======================================
 		 */
 		
-		int numOfThreads = 3;
+		
+		/*
+		 * The more threads that we add, the latency decreases.
+		 * We can see this change as the duration of the program is significantly lower
+		 * as we increase # of threads.
+		 */
+		int numOfThreads = 6;  
+		
+		
 		long startTime = System.currentTimeMillis();
 		recolorPixelMultiThreaded(originalImage, resultImage, numOfThreads);
 		long endTime = System.currentTimeMillis();

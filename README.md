@@ -89,5 +89,10 @@ The time it takes to complete a task, measured in time units. :brain: **How can 
 - Single Threaded Program: `com.example.E.A_SingleThreadedReColorer.java`;
 - Multi Threaded Program: `com.example.E.MultiThreadedReColorer.java`;
 
+    > **Take-away**: The MultiThreaded Program has an additional method, `recolorPixelMultiThreaded()` which takes in a number of threads and divided the picture into sections upon which each thread is tasked with recoloring.  By measuring `System.currentTimeMillis()` before and after invoking the recoloring method and passing `int numberOfThreads` as an argument, we can see how the time is significantly reduced, compared to our previous Single Threaded method, `recolorPixelSingleThreaded()`.
+
+
+    - We can improve the performance by allowing multiple threads to do the work in less time.  This is done by partitioning the problem into multiple sub-problems.  Thus, Latency = Time divided by Number of Tasks, `L = T/N`.
+
 ## Throughput
 The **amount of tasks** completed in a given period of time, measured in tasks per time unit. 
