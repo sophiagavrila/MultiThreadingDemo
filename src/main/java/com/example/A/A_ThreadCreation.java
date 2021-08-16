@@ -7,8 +7,8 @@ public class A_ThreadCreation {
 	 * ====== THERE ARE TWO MAIN WAYS TO CREATE THREADS ================
 	 * =================================================================
 	 * 
-	 * 		(1) Implement Runnable intergace and pass to a new Thread object
-	 * 			(as you see below in this Class)
+	 * 		(1) Implement Runnable interface and pass to a new Thread object
+	 * 			(as you see below)
 	 * 
 	 * 		(2) Extend Thread class, and create an object of that class. 
 	 * 
